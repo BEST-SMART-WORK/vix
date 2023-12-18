@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dfdfdf;
+    /*background image*/
+    background-image: url(/assests/image/image.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: #ffffff;
+    margin: auto;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 50px green;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profil img {
+    width: 100%;
+    margin-top: 20px;
+    border: solid 2px green;
+    box-shadow: 0 0 20px green;
+}
+
+.name {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+}
+.desc {
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+.box_image {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    margin: 5px;
+    height: 0 auto;
+    width: 154px;
+    display: inline-block;
+}
+
+.box img {
+    box-shadow: 0 0 5px #8a8a8a;
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+}
+
+.box img:hover {
+    border: solid 2px green;
+}
+
+.btn-1 {
+    text-align: center;
+    color: white;
+    border: solid 2px green;
+    font-weight: bolder;
+    padding: 5px;
+    width: 140px;
+    margin: auto;
+    background-color: green;
+    box-shadow: 0 0 5px #8a8a8a;
+}
+
+.btn-1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+footer {
+    margin-top: 40px;
+    font-family: 'Material Icons';
+    text-align: center;
+    background-color:rgba(240, 248, 255, 0);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb00;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #71717100;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+    @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
